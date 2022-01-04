@@ -245,6 +245,12 @@ const tick = () => {
     boxGroup.position.y = Math.tan(elapsedTime) * 1;
     boxGroup.position.x = Math.sin(elapsedTime) * -1;
 
+    donutGroup.rotation.x = 0.1 * elapsedTime;
+    donutGroup.rotation.y = 0.1 * elapsedTime;
+
+    boxGroup.rotation.x = 0.1 * elapsedTime;
+    boxGroup.rotation.y = 0.1 * elapsedTime;
+
     if (toggle == true) {
         gsap.to(camera.position, { duration: 0.3, delay: 0.1, x: cursor.x * 10 });
         gsap.to(camera.position, { duration: 0.3, delay: 0.1, y: cursor.y * 10 });

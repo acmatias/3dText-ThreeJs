@@ -243,16 +243,19 @@ const tick = () => {
     textGroup.rotation.x = Math.sin(elapsedTime) * 0.25;
     textGroup.rotation.y = Math.sin(elapsedTime) * 0.25;
     textGroup.rotation.z = Math.sin(elapsedTime) * 0.25;
-    donutGroup.position.y = Math.tan(elapsedTime) * -1;
-    donutGroup.position.x = Math.cos(elapsedTime) * -1;
-    boxGroup.position.y = Math.tan(elapsedTime) * 1;
-    boxGroup.position.x = Math.sin(elapsedTime) * -1;
 
-    donutGroup.rotation.x = -0.2 * elapsedTime;
-    donutGroup.rotation.y = -0.2 * elapsedTime;
+    // donutGroup.position.y = Math.sin(elapsedTime) * 0.25;
+    // donutGroup.position.x = Math.sin(elapsedTime) * 0.25;
+    // boxGroup.position.y = Math.sin(elapsedTime) * 0.25;
+    // boxGroup.position.x = Math.sin(elapsedTime) * 0.25;
 
-    boxGroup.rotation.x = 0.1 * elapsedTime;
-    boxGroup.rotation.y = 0.1 * elapsedTime;
+    donutGroup.rotation.x = Math.sin(elapsedTime) * -0.25;
+    donutGroup.rotation.y = Math.sin(elapsedTime) * -0.25;
+    donutGroup.rotation.z = Math.sin(elapsedTime) * -0.25;
+
+    boxGroup.rotation.x = Math.sin(elapsedTime) * -0.25;
+    boxGroup.rotation.y = Math.sin(elapsedTime) * -0.25;
+    boxGroup.rotation.z = Math.sin(elapsedTime) * -0.25;
 
     if (toggle == true) {
         gsap.to(camera.position, { duration: 0.3, delay: 0.1, x: cursor.x * 10 });

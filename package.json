@@ -16,6 +16,7 @@
     "gsap": "^3.9.1",
     "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",
+    "legendary-cursor": "^1.0.2",
     "lil-gui": "^0.16.0",
     "mini-css-extract-plugin": "^2.4.5",
     "portfinder-sync": "0.0.2",
